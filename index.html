@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Recipe page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+
+
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <navbar class="bg-black text-white flex justify-between p-2 items-center sticky top-0">
+    <div class="">RECIPE</div>
+    <div>
+      <ul class="flex text-sm cursor-pointer">
+        <li class=" m-3 hover:text-red-600">Menu</li>
+        <li class="m-3 hover:text-red-600">Contact Us</li>
+        <li class=" m-3 hover:text-red-600">About US</li>
+      </ul>
+    </div>
+  </navbar>
+  <div  class="md:flex justify-center items-center pt-10 rounded-md">
+    <img src="image-omelette.jpeg ">
+  </div>
+  <!-- title -->
+  <div>
+    <h1 class="text-4xl font-bold p-10 text-center md:text-6xl">Simple Omelette Recipe:</h1>
+    <p class="p-6 md:text-2xl pl-10 pr-10"> An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+      to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+  </div>
+  <!-- section:prepration time -->
+  <section class="flex justify-center mt-5">
+    <div class="bg-violet-100 border-solid border-violet-100 rounded-xl inline-block p-4 justify-center items-center md:flex ">
+      <h2 class="pt-3 pb-3 text-violet-950 text-2xl md:text-4xl pl-10 pr-10"><b>Preparation time:</b></h2>
+      <ul class="list-disc p-4 md:text-2xl pl-10 pr-10">
+        <li><b>Total:</b> Approximately 10 minutes</li>
+        <li><b>Preparation:</b> 5 minutes</li>
+        <li><b>Cooking:</b> 5 minutes</li>
+      </ul>
+    </div>
+  </section><br><br>
+  <!-- section:ingredients -->
+  <section class="flex flex-col flex-wrap">
+    <div class="pl-6 pb-3">
+      <h2 class="text-2xl  text-amber-800 md:text-4xl pl-5 pr-10" ><b>Ingredients:</b></h2>
+    </div>
+    <div class="pl-16">
+      <ul class="list-disc pl-6 md:text-2xl  pr-10">
+        <li class="pb-3">2-3 large eggs</li>
+        <li class="pb-3">Salt, to taste</li>
+        <li class="pb-3">Pepper, to taste</li>
+        <li class="pb-3">1 tablespoon of butter or oil</li>
+        <li class="pb-3"> Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+    </div>
+    <br><br><div class="flex items-center justify-center"><hr class="border-l-amber-600" width="80% "></div>
+  </section><br>
+  
+
+
+  <!-- section Instructions -->
+  <section>
+    <div>
+      <h2 class="p-6 text-amber-800 text-2xl md:text-4xl pl-10 pr-10 ">
+        <b>Instructions:</b>
+      </h2>
+
+      <ol class="pl-20 list-decimal md:text-2xl pl-30 pr-10">
+        <li>
+          <h3>
+            <b>Beat the eggs:</b>
+          </h3>
+          <p>   In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
+            You can add a tablespoon of water or milk for a fluffier texture.</p>
+        </li>
+        <li>
+          <h3>
+            <b>Heat the pan:</b>
+          </h3>
+          <p>Place a non-stick frying pan over medium heat and add butter or oil.</p>
+        </li>
+        <li>
+          <h3>
+            <b>Cook the omelette:</b>
+          </h3>
+          <p>   Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
+            the eggs evenly coat the surface.</p>
+        </li>
+        <li>
+          <h3>
+            <b>Add fillings (optional):</b>
+          </h3>
+          <p>   When the eggs begin to set at the edges but are still slightly runny in the
+            middle, sprinkle your chosen fillings over one half of the omelette.</p>
+        </li>
+        <li>
+          <h3>
+            <b>Fold and serve:</b>
+          </h3>
+          <p>   As the omelette continues to cook, carefully lift one edge and fold it over the
+            fillings. Let it cook for another minute, then slide it onto a plate.</p>
+        </li>
+        <li>
+          <h3>
+            <b>Enjoy:</b>
+          </h3>
+          <p >   Serve hot, with additional salt and pepper if needed.</p>
+        </li>
+
+      </ol>
+    </div>
+    <br><br><div class="flex items-center justify-center"><hr class="border-l-amber-600" width="80% "></div>
+  </section>
+
+  <!-- section-nutrition -->
+<section>
+
+
+  <div>
+    <h2 class="p-6 text-2xl text-amber-800 md:text-4xl pl-10 pr-10">
+<b>Nutrition:</b>
+    </h2>
+    <p class="p-8 md:text-2xl pl-10 pr-10">
+      The table below shows nutritional values per serving without the additional fillings.
+    </p>
+
+  </div>
+  <div class="flex flex-row justify-around pb-3">
+    <p class="pt-3 md:text-2xl pl-10 pr-10">  
+      Calories
+    </p>
+    <p class="text-amber-800 pt-3 md:text-2xl pl-10 pr-10">277kcal</p>
+  </div>
+  <div class="flex items-center justify-center"><hr class="border-l-amber-600" width="70% "></div>
+  <div class="flex justify-around pb-3">
+    <p class="pt-3 md:text-2xl pl-10 pr-10">Carbs</p>
+    <p class="text-amber-800 pt-3 md:text-2xl pl-10 pr-10">0g</p>
+  </div>
+  
+  <div class="flex items-center justify-center"><hr class="border-l-amber-600" width="70% "></div>
+  <div class="flex justify-around pb-3 md:text-2xl pl-10 pr-10">
+    <p class="pt-3 md:text-2xl pl-10 pr-10"> Protein</p>
+    <p class="text-amber-800 pt-3 md:text-2xl pl-10 pr-10"> 20g</p>
+  </div>
+  <div class="flex items-center justify-center"><hr class="border-l-amber-600" width="70% "></div>
+  <div class="flex justify-around pb-3">
+    <p class="pt-3 md:text-2xl pl-10 pr-10">Fat</p>
+    <p class="text-amber-800 pt-3 md:text-2xl pl-10 pr-10"> 22g
+    </p>
+  </div>
+  <div class="flex items-center justify-center"><hr class="border-l-amber-600" width="70% "></div>
+</section><br>
+
+  <div class=" attribution flex justify-end bg-black text-white p-6">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    
+    Coded by <a href="index.html"> M.SRIDHARAN</a>.
+  </div>
+</body>
+
+</html>
